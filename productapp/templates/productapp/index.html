@@ -1,0 +1,9 @@
+{% if prod_lst %}
+    <ul>
+        {% for prod in prod_lst %}
+            <li>{{prod.name}}</li>
+        {% endfor %}
+    </ul>
+{% else %}
+    <p> No Products Right Now</p>
+{% endif %}
